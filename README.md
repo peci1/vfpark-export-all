@@ -29,6 +29,6 @@ Tento postup využívá iMacros doplněk pro Firefox/Chrome. Byl vytvořen ve Fi
 
 1. Během vykonávání skriptu se zdá, jako by se obsah výpisu neaktualizoval. Napanikařte, je to jen problém vykreslování - ukládání probíhá správně.
 1. CSV jsou textové soubory se zápisem tabulek, které je možné otevřít editory prostého textu nebo tabulkovými procesory (Libreoffice Calc, Microsoft Excel). Neotevírejte je ve Wordu!
-1. Vyexportované CSV není korektní. Není comma-separated (oddělené čárkami), ale semicolon-separated (oddělené středníky). Středníky v textu zpráv ale nejsou nijak escapované, a programy, ve kterých CSV otevřete, jsou tím zmateny. Dá se to spravit přidáním `"""` za 3. středník a na konec každého řádku.
+1. Vyexportované CSV není korektní. Není comma-separated (oddělené čárkami), ale semicolon-separated (oddělené středníky). Středníky v textu zpráv ale nejsou nijak escapované, a programy, ve kterých CSV otevřete, jsou tím zmateny. Dá se to spravit přidáním `"""` za 3. středník a na konec každého řádku. Ve Vimu/Sedu toho docílíte příkazem `:% s/^\(\([^;]*;\)\{3\}\)\(.*\)$/\1"""\3"""/`
 1. Ve vyexportovaném CSV jsou některé speciální znaky uvedeny jako HTML escape sekvence. Např. místo `&` uvidíte `&amp;`. [Zde](http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php) je jejich seznam. K nahrazení stačí použít funkci "Najít a nahradit".
 1. Pro spojení CSV souborů do jednoho použijte libovolný program na spojování textových souborů, např `cat` na Linuxu. Můžete je spojit i prostým copy&paste obsahu všech souborů do jednoho.
