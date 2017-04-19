@@ -25,6 +25,8 @@ Tento postup využívá iMacros doplněk pro Firefox/Chrome. Byl vytvořen ve Fi
 1. Klikněte na `Play (Loop)` a nic víc nedělejte. Neopouštějte prohlížeč a nepřepínejte na jinou aplikaci. Po několika minutách ukládání skončí a můžete opět počítač ovládat.
 1. Exportované CSV soubory najdete v iMacros složce pro stažené soubory (ne v obvyklé složce, kam prohlížeč ukládá stažebné soubory). Umístění této složky opět najdete v nastaveních iMacros.
 
+![Návod](navod.gif)
+
 ## Poznámky
 
 1. Během vykonávání skriptu se zdá, jako by se obsah výpisu neaktualizoval. Napanikařte, je to jen problém vykreslování - ukládání probíhá správně.
